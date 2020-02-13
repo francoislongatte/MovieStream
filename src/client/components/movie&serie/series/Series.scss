@@ -1,0 +1,13 @@
+form.pure-form {
+    padding: 0 2vw;
+    select{
+        margin-left: 2vw;
+    }
+    > * {
+        display: inline;
+    }
+} 
+
+select {
+    color: black;
+}

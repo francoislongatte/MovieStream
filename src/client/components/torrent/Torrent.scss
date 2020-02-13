@@ -1,0 +1,100 @@
+.pure-form {
+  padding: 2vw 0;
+  input[type="text"] {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 90%;
+    outline: none;
+    color: black;
+  }
+  .pure-button {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 0.55em 1em;
+    width: 10%;
+  }
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.iconLoading svg {
+  animation: rotating 0.7s linear infinite;
+}
+
+.table {
+  padding: 0 2vw;
+  & > form{
+    padding: 2vw 0;
+  }
+}
+
+.pure-table {
+  width: 100%;
+  background: white;
+  color: black;
+  border: none;
+}
+
+.pure-table-odd td {
+  background-color: #b3b3b3;
+}
+
+.pure-table thead {
+  background-color: black;
+  color: white;
+}
+
+.pure-table-striped tr:nth-child(2n-1) td {
+  background-color: #eeeeee;
+  color: black;
+}
+
+.pure-table td,
+.pure-table th {
+  border-left: none;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover.tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}

@@ -1,0 +1,25 @@
+main {
+    padding-top: 70px 1.5em;
+    & > div{
+        overflow: hidden;
+        padding-bottom: 5vh;
+    }
+}
+
+.fade-enter {
+    opacity: 0.01;
+}
+
+.fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 300ms ease-in;
+}
+
+.fade-exit {
+    opacity: 0;
+}
+    
+.fade-exit.fade-exit-active {
+    opacity: 0.01;
+    transition: opacity 300ms ease-in;
+}
